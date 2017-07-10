@@ -74,8 +74,22 @@ rgba (0,0,0,0.24);
  	<p>She hopes to continue inspiring other people. Please email her at ilb11@georgetown.edu for more information </p>
  </div>
  </div>
- </body>
- </html>
+
+ <?php 
+function writeMsg() {
+	echo "Isabella Basco is a fun-loving, multi-faceted person. Below are her favorite things to do."; 
+}
+writeMsg() ;
+echo "<br>";
+$activities = array("skiing", "reading", "roller skating", "styling outfits") ;
+
+foreach ($activities as $value)  { 
+	echo "$value <br>";
+}
+
+$age = array("Isabella"=>"23");
+echo "Isabella is " . $age['Isabella'] . " years old.";
+?> 
 
  <div class="slideshow-container">
   	<div id="headshot1" class = "mySlides fade">
